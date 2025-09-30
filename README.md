@@ -1,73 +1,106 @@
-# React + TypeScript + Vite
+# MarineX – Ocean Hazard Reporting Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**MarineX** is a  platform designed to support **citizen-based ocean hazard reporting** and enhance **situational awareness** for disaster management agencies, complementing early warning services provided by **INCOIS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌊 About INCOIS
 
-## React Compiler
+The **Indian National Centre for Ocean Information Services (INCOIS)**, under the Ministry of Earth Sciences, provides ocean information and advisory services to promote **maritime safety** and **disaster risk reduction**. INCOIS delivers early warnings for:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Tsunamis  
+- Storm surges  
+- High waves and swell surges  
+- Coastal currents  
 
-## Expanding the ESLint configuration
+While INCOIS provides accurate forecasts, **real-time field data from citizens** and **social media insights** are often delayed or underutilized.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🏝 Background
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+India’s coastline is vulnerable to multiple ocean hazards. Effective response requires **real-time reporting** and **monitoring public discussions**. Social media and local observations often contain early indicators of hazard events but remain underutilized.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Problem Statement
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+There is no unified platform to:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Allow citizens to report ocean hazards in real-time  
+- Aggregate crowd-sourced observations with social media trends  
+- Visualize reports dynamically to identify hotspots  
+- Provide actionable insights to disaster managers  
+
+---
+
+## 🔧 Proposed Solution
+
+MarineX bridges this gap with an **integrated web + mobile platform** enabling:
+
+### 1️⃣ Citizen Reporting
+- Geotagged reports with photos/videos  
+- Role-based access (citizens, officials, analysts)  
+
+### 2️⃣ Dynamic Dashboard
+- Map-based visualization of live reports  
+- Hotspot detection based on report density or verified incidents  
+
+### 3️⃣ Social Media Monitoring
+- Integration with Twitter, YouTube, and public posts  
+- NLP/Text Classification to extract hazard-related trends and sentiment  
+
+### 4️⃣ Situational Awareness
+- Filters by location, event type, date, and source  
+- Insights to validate warnings and prioritize response  
+
+### 5️⃣ Technical Features
+- Backend database + API for managing crowdsourced data  
+- Multilingual support for regional accessibility  
+- Offline data collection and later synchronization  
+
+---
+
+## ✅ Features Implemented (Prototype Stage)
+
+- React + TypeScript + Vite project setup  
+- TailwindCSS styling  
+- Map-based UI with placeholder hazard reports  
+- Role-based navigation for citizens and officials  
+- Basic dashboard for report visualization  
+
+---
+
+## 🛠 Planned Features
+
+- Social media integration + NLP  
+- Dynamic hotspot generation  
+- Media upload (photos/videos)  
+- Authentication & role-based access  
+- Offline reporting & sync  
+- Integration with INCOIS early warning system  
+
+---
+
+## 🔀 Workflow / Architecture
+
+### User Reporting Flow
+![User Reporting Flow](assets/flowchart_reporting.png)  
+*Figure 1: Step-by-step flow from user report submission to dashboard visualization.*
+
+### Social Media & Hotspot Analysis
+![Social Media Flow](assets/flowchart_socialmedia.png)  
+*Figure 2: Integration of social media feeds with crowdsourced hazard reports and hotspot detection.*
+
+### Overall System Architecture
+![System Architecture](assets/flowchart_system.png)  
+*Figure 3: Complete architecture combining mobile/web apps, backend, NLP engine, dashboard, and authorities.*
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/Harsh-Kumar-6/MarineX__prototype.git
+cd MarineX__prototype
