@@ -84,17 +84,13 @@ MarineX bridges this gap with an **integrated web + mobile platform** enabling:
 
 ## 🔀 Workflow / Architecture
 
-### User Reporting Flow
-![User Reporting Flow](assets/flowchart_reporting.png)  
+### Frontend Flow
+![User Reporting Flow](assets/frontend.jpeg)  
 *Figure 1: Step-by-step flow from user report submission to dashboard visualization.*
 
-### Social Media & Hotspot Analysis
-![Social Media Flow](assets/flowchart_socialmedia.png)  
+### Backend and Ai flow
+![backend and ai Flow](assets/backend_and_ai.jpeg)  
 *Figure 2: Integration of social media feeds with crowdsourced hazard reports and hotspot detection.*
-
-### Overall System Architecture
-![System Architecture](assets/flowchart_system.png)  
-*Figure 3: Complete architecture combining mobile/web apps, backend, NLP engine, dashboard, and authorities.*
 
 ---
 
