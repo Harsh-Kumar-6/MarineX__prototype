@@ -85,11 +85,11 @@ MarineX bridges this gap with an **integrated web + mobile platform** enabling:
 ## 🔀 Workflow / Architecture
 
 ### Frontend Flow
-![User Reporting Flow](assets/frontend.jpeg)  
+![User Reporting Flow](src/assets/frontend.jpeg)  
 *Figure 1: Step-by-step flow from user report submission to dashboard visualization.*
 
 ### Backend and Ai flow
-![backend and ai Flow](assets/backend_and_ai.jpeg)  
+![backend and ai Flow](src/assets/backend_and_ai.jpeg)  
 *Figure 2: Integration of social media feeds with crowdsourced hazard reports and hotspot detection.*
 
 ---
