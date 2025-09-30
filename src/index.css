@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* always show vertical scrollbar */
+  background-color: #00008B; /* blue background for entire page */
+}
+
+/* Optional: prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+  font-family: 'Public Sans', sans-serif; /* optional default font */
+}
