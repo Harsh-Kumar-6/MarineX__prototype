@@ -2,6 +2,8 @@
 
 **MarineX** is a  platform designed to support **citizen-based ocean hazard reporting** and enhance **situational awareness** for disaster management agencies, complementing early warning services provided by **INCOIS**.
 
+## Link
+https://68db707288cffb0008267574--fanciful-bonbon-5ecb5b.netlify.app/
 ---
 
 ## 🌊 About INCOIS
